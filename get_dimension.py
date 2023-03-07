@@ -17,6 +17,8 @@ def parse_opt():
     parser.add_argument('--conf-thres', type=float, default=0.4, help='confidence threshold')
     parser.add_argument('--iou-thres', type=float, default=0.3, help='NMS IoU threshold') 
     parser.add_argument('--source', type=float, default=0.45, help='input image')    
+    opt = parser.parse_args()
+    return opt
 
 if __name__ == "__main__":
     opt = parse_opt()
