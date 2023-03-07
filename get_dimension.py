@@ -22,4 +22,6 @@ def parse_opt():
     return opt
 
 if __name__ == "__main__":
-    opt = p
+    opt = parse_opt()
+    detect(**vars(opt))
+    print("--------------Completed--------------------")
