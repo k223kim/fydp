@@ -168,7 +168,7 @@ def run(
                             f.write(('%g ' * len(line)).rstrip() % line + '\n')
 
                     if save_img or save_crop or view_img:  # Add bbox to image
-                        # c = int(cls)  # integer class
+                        c = int(cls)  # integer class
                         # label = None if hide_labels else (names[c] if hide_conf else f'{names[c]} {conf:.2f}')
                         # label = "ant"
                         if hide_labels:
